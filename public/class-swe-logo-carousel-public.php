@@ -73,9 +73,9 @@ class Swe_Logo_Carousel_Public {
 		 * class.
 		 */
 		
-		wp_enqueue_style( 'SWE-owl-carousel-css', SWE_LOGO_CAROUSEL_PLUGIN_URL . '/public/css/owl.carousel.swe.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'SWE-owl-carousel-css', plugin_dir_url( __FILE__ ) . 'css/owl.carousel.swe.min.css', array(), $this->version, 'all' );
 		
-		wp_enqueue_style( 'SWE-owl-carousel-theme-css', SWE_LOGO_CAROUSEL_PLUGIN_URL . '/public/css/owl.theme.default.swe.min.css', array(), $this->version, 'all' );
+		wp_enqueue_style( 'SWE-owl-carousel-theme-css', plugin_dir_url( __FILE__ ) . 'css/owl.theme.default.swe.min.css', array(), $this->version, 'all' );
 		
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/swe-logo-carousel-public.css', array(), $this->version, 'all' );
 
@@ -102,7 +102,7 @@ class Swe_Logo_Carousel_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/swe-logo-carousel-public.js', array( 'jquery' ), $this->version, true );
 		
-		wp_enqueue_script( 'swe-owl-carousel-plugin', SWE_LOGO_CAROUSEL_PLUGIN_URL . '/public/js/owl.carousel.min.js', array( 'jquery' ), $this->version, true );
+		wp_enqueue_script( 'swe-owl-carousel-plugin', plugin_dir_url( __FILE__ ) . 'js/owl.carousel.min.js', array( 'jquery' ), $this->version, true );
 
 	}
 
