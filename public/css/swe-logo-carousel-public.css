@@ -1,0 +1,80 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ 
+.swe_logo_carousel_wrapper{
+	position: relative;
+	background: transparent;
+}
+.logo_item{
+	padding: 10px;
+    text-align: center;
+}
+.logo_item.on.Grayscale:hover img{
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-o-filter: grayscale(100%); 
+	-ms-filter: grayscale(100%); 
+    filter: grayscale(100%);
+}
+.logo_item.on.Blur:hover img{
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+}
+.logo_item.on.Zoom:hover img{
+	-moz-transform: scale(1.05); 
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05); 
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+.logo_item a.swe_logo_url {
+	display: block;
+	padding: 6px;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	-webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.logo_item img {
+    box-shadow: none;
+    display: block;
+    margin: 0 auto;
+    border-radius: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.swe_logo_corousel_show.owl-theme .owl-nav .owl-prev, .swe_logo_corousel_show.owl-theme .owl-nav .owl-next {
+    background: #2296d8;
+    border-radius: 2px;
+    margin: 2px;
+    line-height: 21px;
+    font-size: 26px;
+    color: #fff;
+    border: 0px;
+    opacity: 1;
+    z-index: 999;
+    width: 35px;
+    height: 35px;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.swe_logo_corousel_show.owl-theme .owl-nav .owl-prev:hover, .swe_logo_corousel_show.owl-theme .owl-nav .owl-next:hover {
+    opacity: 0.7;
+}
+.swe_logo_corousel_show .owl-nav div:focus, .owl-theme .owl-dots .owl-dot:focus {
+    outline: 0px;
+    text-decoration: none;
+}
+.swe_logo_corousel_show.owl-theme .owl-dots .owl-dot.active span, .swe_logo_corousel_show.owl-theme .owl-dots .owl-dot:hover span{
+	background:#2296d8
+}
